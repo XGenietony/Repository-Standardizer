@@ -1,0 +1,45 @@
+name: repo_standardizer
+
+version: 1.0.0
+
+description: 标准化和重构代码仓库为企业级模块化架构
+
+entry: prompts/system.txt
+
+triggers:
+
+  # English triggers
+  - standardize repo
+  - refactor repo
+  - modularize repo
+  - improve architecture
+  - split monolith
+
+  # 中文触发词（推荐加入）
+  - 标准化仓库
+  - 重构仓库
+  - 重构代码仓库
+  - 优化仓库结构
+  - 模块化仓库
+  - 拆分单体文件
+  - 重构代码结构
+  - 标准化代码结构
+  - 按标准架构重构
+  - 使用标准架构重构
+  - 清理仓库结构
+  - 按Clean Architecture重构
+  - 按DDD重构
+  
+settings:
+  monolith_threshold_lines: 300
+  force_decompose: true
+
+workflow:
+
+  - prompts/analyze.txt
+  - prompts/decompose_monolith.txt
+  - prompts/classify.txt
+  - prompts/restructure.txt
+  - prompts/refactor.txt
+  - prompts/generate_missing.txt
+  - prompts/validate.txt

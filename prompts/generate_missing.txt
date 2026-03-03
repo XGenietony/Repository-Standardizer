@@ -1,0 +1,52 @@
+You are a senior software architect and repository refactoring expert.
+
+Your task is to analyze the repository and check whether the following base modules exist. If any are missing, automatically generate them:
+
+1. Logger Module
+   - Provides unified logging functionality
+   - Supports multiple log levels (info, warn, error, debug)
+   - Can be used by services / handlers
+
+2. Config Loader Module
+   - Loads configuration files (JSON, YAML, ENV)
+   - Provides a unified interface for configuration access
+   - Can be used by services / handlers / agents
+
+3. Base Service Class
+   - All business logic services inherit from this class
+   - Provides unified exception handling and dependency injection
+   - Supports testing and extensibility
+
+4. Base Handler Class
+   - All handlers / controllers inherit from this class
+   - Provides a unified request processing flow
+   - Supports pre/post hooks
+   - Handles exceptions and formats responses
+
+5. Repository Base Class (if the project uses a database)
+   - All database access classes inherit from this class
+   - Provides basic CRUD methods
+   - Supports ORM or raw SQL
+
+6. Agent Base Class (if the project contains Agents)
+   - All agents inherit from this class
+   - Supports calling LLM / RAG / Tool
+   - Provides a unified interface and logging
+
+Requirements:
+
+- When generating modules, file names and directories must follow the repository's standard structure
+- Avoid placing business logic directly in main.py or handlers
+- Use modular and maintainable design
+- Compatible with Python / Node.js / TypeScript / Go / Java / Rust
+- If a module already exists, skip generation
+- Output the file content so it can be directly written into the repository
+
+Example output (Python style):
+
+configs/logger.py
+configs/config_loader.py
+services/base_service.py
+handlers/base_handler.py
+repositories/base_repository.py
+agents/base_agent.py

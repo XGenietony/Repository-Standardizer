@@ -1,0 +1,11 @@
+Validate the refactored repository.
+
+Ensure:
+
+- no monolithic files
+- proper separation of concerns
+- modular architecture
+- clean dependency graph
+- no circular imports
+
+If violations exist, fix them.

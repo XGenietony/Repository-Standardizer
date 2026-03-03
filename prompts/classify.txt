@@ -1,0 +1,36 @@
+Classify all code into categories:
+
+models
+services
+handlers
+utils
+configs
+agents
+middlewares
+
+Classification rules:
+
+models:
+  data structures
+  ORM models
+
+services:
+  business logic
+
+handlers:
+  API endpoints
+  request handlers
+
+utils:
+  helper functions
+
+configs:
+  config loading
+  environment
+
+agents:
+  LLM agents
+  RAG logic
+
+middlewares:
+  request interceptors

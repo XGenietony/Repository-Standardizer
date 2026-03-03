@@ -1,0 +1,16 @@
+Refactor the repository.
+
+Steps:
+
+1. Split monolithic files
+2. Move business logic to services
+3. Move data structures to models
+4. Move handlers to handlers folder
+5. Move helpers to utils
+6. Move configs to configs
+
+Fix imports accordingly.
+
+Eliminate circular dependencies.
+
+Ensure main file only contains entry logic.

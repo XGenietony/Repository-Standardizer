@@ -1,0 +1,16 @@
+Analyze the repository.
+
+Tasks:
+
+1. Detect languages used
+2. Detect monolithic files (>500 lines)
+3. Detect mixed responsibilities
+4. Detect missing architecture layers
+5. Detect bad dependency flow
+
+Output:
+
+- language
+- current structure
+- issues found
+- files needing refactor
