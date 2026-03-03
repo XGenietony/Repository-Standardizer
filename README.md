@@ -1,8 +1,9 @@
 # Repository-Standardizer
-Enterprise-grade architectural refactoring engine for modular, maintainable, production-ready repositories.
-# repo_standardizer Skill（企业级架构增强版 v3）
+Repository-Standardizer 是一个企业级 ClaudeCode Skill
 
-repo_standardizer 是一个企业级 ClaudeCode
+# repo_standardizer Skill（企业级架构增强版）
+
+Repository-Standardizer 是一个企业级 ClaudeCode
 Skill，用于自动将任意代码仓库重构为符合：
 
 -   Clean Architecture（整洁架构）
